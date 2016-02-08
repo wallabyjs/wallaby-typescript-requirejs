@@ -13,9 +13,7 @@ module.exports = function (wallaby) {
     ],
 
     compilers: {
-      // see const enum ModuleKind
-      // https://github.com/Microsoft/TypeScript/blob/master/src/compiler/types.ts
-      '**/*.ts': wallaby.compilers.typeScript({module: 2})
+      '**/*.ts': wallaby.compilers.typeScript({module: 'amd'})
     }
   };
 };
